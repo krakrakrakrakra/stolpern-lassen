@@ -1,0 +1,225 @@
+/**
+ *  Styles.
+ *   -161-
+ *  by @krakrakrakrakra
+ */
+
+/* fonts ------------------------------------------------------- */
+@font-face {
+    font-family: 'PT Serif';
+    src: url('./fonts/PTF75F-webfont.eot');
+    src: url('./fonts/PTF75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/PTF75F-webfont.woff') format('woff'),
+         url('./fonts/PTF75F-webfont.ttf') format('truetype'),
+         url('./fonts/PTF75F-webfont.svg#pt_serifbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('./fonts/PTF76F-webfont.eot');
+    src: url('./fonts/PTF76F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/PTF76F-webfont.woff') format('woff'),
+         url('./fonts/PTF76F-webfont.ttf') format('truetype'),
+         url('./fonts/PTF76F-webfont.svg#pt_serifbold_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* basic ------------------------------------------------------- */
+html {
+    box-sizing: border-box;
+    margin-left: calc(100vw - 100%);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    font: 300 18px/1.4 -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.wrapper {
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 1.6em;
+}
+
+.logo {
+    display: inline-block;
+    border: none !important;
+    margin: 1.6em 0;
+}
+
+a {
+    color: #fb004f;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all .161s ease-in-out;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -3px;
+}
+
+a:hover {
+    border-bottom: 2px solid #fb004f;
+}
+
+/* index content ------------------------------------------------------- */
+.posts {
+    margin: 1.6em 0;
+}
+
+.posts a {
+    display: block;
+    padding: 4px 8px 8px;
+    margin-bottom: 1em;
+    border-left: 6px solid #fb004f;
+    border-bottom: 0;
+}
+
+.posts a:hover {
+    background-color: #fb004f;
+    color: #fff;
+}
+
+
+/* post content ------------------------------------------------------- */
+article {
+    margin: 80px 0;
+}
+
+h1 {
+    font: 700 32px/1 "PT Serif", "Source Serif Pro", source-serif-pro, Georgia, serif;
+    color: #333;
+    letter-spacing: -.03em; 
+    margin: 16px 0 .8em;
+}
+
+h2 {
+    margin-top: 1.6em;
+    margin-bottom: .8em;
+    font: 100 italic 28px/1.4 -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    color: #777;
+    text-align: center;
+}
+
+.meta {
+    display: block;
+    font: 12px -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+.article-content {
+    margin: 16px 0;
+    padding-bottom: 3.2em;
+    font: 300 18px/1.4 -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    color: #333;
+    border-bottom: 1px solid #888;
+}
+
+.lead {
+    font-size: 1.2em;
+    color: #999;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.lead a {
+    color: #888;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.lead a:hover {
+    opacity: 1;
+    border-bottom: 2px solid #444;
+}
+
+p + p {
+    margin-top: 1.6em;
+    text-indent: 1.6em;
+}
+
+sup {
+    vertical-align: super; 
+    font-size: .7em;
+    padding: 2px;
+    opacity: .9;
+}
+
+ul {
+    margin: 1.6em 0;
+    padding-left: 24px;
+    list-style-type: circle;
+    color: #fb004f;
+}
+
+ul li {
+    margin: .2em 0;
+}
+
+.unbold {
+    font-weight: 300;
+}
+
+.sources {
+    margin: 10px 0;
+    list-style: none;
+    padding-left: 0;
+    font: normal 14px/1.4 serif;
+    color: #555;
+    overflow: auto;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1em;
+}
+
+::selection {
+    background-color: #fb004f;
+    color: #fff;
+}
+::-moz-selection {
+    background-color: #fb004f;
+    color: #fff;
+}
+
+a::selection {
+    background-color: #333;
+    color: #fff;
+}
+a::-moz-selection {
+    background-color: #333;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    body,
+    .article-content,
+    .lead {
+        font-size: 16px;
+    }
+    .wrapper {
+        padding: 16px;
+    }
+    h1, h2 {
+        font-size: 1.6em;
+    }
+    article {
+        margin: 16px 0;
+    }
+}
